@@ -1,0 +1,4 @@
+R framework for evaluating causal inference algorithms and for validating their estimates with a stability score ("stability score for causal inference", SSCI).
+
+Author: Manuel Ruch
+
