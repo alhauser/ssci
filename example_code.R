@@ -12,7 +12,7 @@ true.graph = graphAM(true.am, edgemode = "directed")
 #create a plot with sid vs sample size with linear gaussian data and ges algorithm
 size = seq(50, 2000, 20)
 dat.list = lapply(size, FUN = get.lin.gaus, mmat = sem[[1]], sdev = sem[[2]], sem = NULL)
-source("sid/sid_samplesize.R")
+source("violated_assumptions/sid_samplesize.R")
 plot.sid(dat.list, size, ges, "ges", true.am )
 
 # compare estimates on linear gaussian data to estimates on linear exponential data
