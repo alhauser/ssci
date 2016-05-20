@@ -4,8 +4,8 @@ score for causal inference", SSCI).
 
 content:
 
-test_utils.R 		functions for generation and simulation of SEMs, for comparing and handling graphs and results from differen algorithms
-scoring.R		functions for subsampling and calculation of the SSCI
+test_utils.R 		functions for generation and simulation of SEMs, for comparing and handling graphs and results from differen algorithms for causal inference
+scoring.R			functions for subsampling and calculation of the SSCI
 example_code.R		some examples
 
 violted_assumptions	experiments with violated assumptions, organised bottom up the files in the subfolders specify the sem and then call the upper files (sid_lin_gauss.R sid_exp_noise.R, sid_non_lin.R, sid_logistic.R, sid_unif_noise.R) to simulate the data and calculate the SID values with sid_samplesize.R. The effect interactions are specified in a seperate file for every sem in its own folder in the file interactions.R
@@ -13,9 +13,9 @@ violted_assumptions	experiments with violated assumptions, organised bottom up t
 SSCI_evaluation		
 	score_propperties	
 	evaluation
-		all_seq_ssci.R	evaluation without interventions
-		all_seq_intervention_ssci.R	evaluation with interventions
-		plot_from_txt.R	functions for plotting the results of the evaluations
+		all_seq_ssci.R					evaluation without interventions
+		all_seq_intervention_ssci.R		evaluation with interventions
+		plot_from_txt.R					functions for plotting the results of the evaluations
 	
 	score_properties
 		compare_measures.R	comparison of different graph measueres based on random graphs
